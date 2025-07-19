@@ -13,13 +13,9 @@ p,li{
   color: hsl(30, 10%, 34%);
 }
 
-h2, .info{
+h2{
   color: hsl(14, 45%, 36%);
   font-weight: 600;
-}
-
-.info{
-  font-size: 14px;
 }
 
 .main-page{
@@ -45,20 +41,40 @@ table{
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
-  border-bottom: 2px solid hsl(30, 54%, 90%);
-
   margin-bottom: 20px;
+  /* those to remove the borders of the table */
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
 }
 
 td{
   padding: 10px;
   border: 1px solid hsl(30, 54%, 90%);
+  /* those to remove the borders of the table */
+  /* they should be applied here and in the table css */
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+table tr:last-child td{
+  border-bottom: none;
 }
 
 .ingredients{
+  font-family: 'Outfit', sans-serif;
   color: hsl(30, 10%, 34%);
-  font-weight: 600;
+  font-weight: 300;
   font-size: 16px;
+}
+
+.info{
+  color: hsl(14, 45%, 36%);
+  font-size: 14px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
 }
 
 /* ===== ul lists styles ===== */
@@ -68,20 +84,16 @@ ul {
   padding-left: 1em;
 }
 
-.ingredient-li {
-  display: flex;
-  align-items: flex-start;
+ul.ingredient li{
   color: hsl(30, 10%, 34%);
   font-weight: 600;
   font-size: 16px;
 }
 
-.ingredient-li::before {
+ul.ingredient li::before {
   content: "•";
   color: hsl(14, 45%, 36%);
-  font-size: 1em;
   margin-right: 1.2em;
-  line-height: 1;
 }
 
 
@@ -100,10 +112,9 @@ h3{
   margin: 0;
 }
 
-.preparation-li::before {
+ul.preparation li::before {
   content: "•";
   color: hsl(332, 51%, 32%);
-  font-size: 1em;
   margin-right: 1.2em;
 }
 
