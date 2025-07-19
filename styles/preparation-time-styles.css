@@ -1,0 +1,26 @@
+.preparation-time{
+  background-color: hsl(330, 100%, 98%);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  margin-top: 26px;
+}
+
+h3{
+  color: hsl(332, 51%, 32%);
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  margin: 0;
+}
+
+ul {
+  list-style: none; /* removes default bullet */
+  padding-left: 1em; /* optional: add spacing */
+}
+
+.preparation-li::before {
+  content: "•";
+  color: hsl(332, 51%, 32%);
+  font-size: 1em;
+  margin-right: 1.2em;
+}

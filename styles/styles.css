@@ -1,0 +1,62 @@
+body{
+  background-color: hsl(30, 54%, 90%);
+}
+
+p{
+  font-size: 12px;
+  
+  font-weight: 600;
+}
+
+p,li{
+  font-family: 'Outfit', sans-serif;
+  color: hsl(30, 10%, 34%);
+}
+
+h2, .info{
+  color: hsl(14, 45%, 36%);
+  font-weight: 600;
+}
+
+.darker{
+  color: hsl(30, 10%, 34%);
+  display: inline;
+  font-weight: bold;
+  font-size: 16px;
+}
+.info{
+  font-size: 14px;
+}
+
+.main-page{
+  background-color: white;
+  padding: 30px;
+  border-radius: 16px;
+  margin-top: 100px;
+  margin-left: 380px;
+  margin-right: 380px;
+  margin-bottom: 100px;
+}
+
+img{
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+}
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border-bottom: 2px solid hsl(30, 54%, 90%);
+
+  margin-bottom: 20px;
+}
+
+td{
+  padding: 10px;
+  border: 1px solid hsl(30, 54%, 90%);
+}
+
+  
