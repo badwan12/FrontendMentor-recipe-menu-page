@@ -19,6 +19,7 @@ h2{
 }
 
 .main-page{
+  
   background-color: white;
   padding: 30px;
   border-radius: 16px;
@@ -26,6 +27,10 @@ h2{
   margin-left: 380px;
   margin-right: 380px;
   margin-bottom: 100px;
+
+  padding-bottom: 20px;
+  height: 1449px;
+  width: 530px;
 }
 
 img{
@@ -37,7 +42,21 @@ img{
 
 /* ==== table element styles ==== */
 
-table{
+.instructions-table {
+  border-collapse: collapse;
+  border-bottom: 1px solid hsl(30, 54%, 90%);
+  margin-top: 30px;
+}
+
+.instructions-table td{
+  padding: 10px;
+  border: 1px solid hsl(30, 54%, 90%);
+
+  border-left: none;
+  border-right: none;
+}
+
+.nutrition-table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
@@ -49,7 +68,7 @@ table{
   border-bottom: none;
 }
 
-td{
+.nutrition-table td{
   padding: 10px;
   border: 1px solid hsl(30, 54%, 90%);
   /* those to remove the borders of the table */
@@ -81,7 +100,7 @@ table tr:last-child td{
 
 ul {
   list-style: none;
-  padding-left: 1em;
+  padding-left: 10px;
 }
 
 ul.ingredient li{
@@ -93,7 +112,7 @@ ul.ingredient li{
 ul.ingredient li::before {
   content: "•";
   color: hsl(14, 45%, 36%);
-  margin-right: 1.2em;
+  margin-right: 1.5em;
 }
 
 
@@ -140,3 +159,18 @@ ul.preparation li::before {
   font-weight: bold;
 }
 
+
+@media (max-width: 768px) {
+    .box {
+      height: 200px;
+      background-color: lightgreen;
+    }
+  }
+
+  /* Larger desktop screens (optional) */
+  @media (min-width: 1200px) {
+    .box {
+      height: 400px;
+      background-color: lightcoral;
+    }
+  }
