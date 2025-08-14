@@ -42,8 +42,10 @@ h2{
   margin-bottom: 100px;
   padding-bottom: 20px;
   height: auto;
-  width: 570px;
   box-shadow: 0 4px 24px rgba(0,0,0,0.08); /* Optional: subtle shadow */
+  width: 90%;        /* responsive width */
+  max-width: 570px;  /* keeps it neat on large screens */
+  margin: 50px auto; /* centers on page */
 }
 
 img{
