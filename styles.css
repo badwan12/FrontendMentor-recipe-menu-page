@@ -1,5 +1,20 @@
-body{
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
   background-color: hsl(30, 54%, 90%);
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 p{
@@ -19,18 +34,16 @@ h2{
 }
 
 .main-page{
-  
   background-color: white;
   padding: 30px;
   border-radius: 16px;
+  /* Remove margin properties */
   margin-top: 100px;
-  margin-left: 380px;
-  margin-right: 380px;
   margin-bottom: 100px;
-
   padding-bottom: 20px;
-  height: 1449px;
-  width: 530px;
+  height: auto;
+  width: 570px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08); /* Optional: subtle shadow */
 }
 
 img{
@@ -38,6 +51,12 @@ img{
   height: auto;
   display: block;
   border-radius: 16px;
+}
+
+.attribution{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* ==== table element styles ==== */
